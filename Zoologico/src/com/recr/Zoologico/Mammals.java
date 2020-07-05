@@ -2,24 +2,24 @@ package com.recr.Zoologico;
 
 public class Mammals extends Vertebrate implements Walks{
 	
-	private int lugs;
+	private int lungs;
 	private int extremities;
 	private String Kind;
 	 
 	public void Walk() {
-		if(lugs>0) {
+		if(lungs>0) {
 			System.out.println(this.getKind()+": "+ this.getName()+"\nExtremities:"+this.getExtremities()+"\nYears: "+this.getAge()+"\nEyes:"+this.getEyes()+"\nHabit: "+this.getHabit()+ "\nSex:"+this.getSex()+"\nBones: "+this.getBone()+"\nSize:"+this.getSize());
-		}else if(lugs==0) {
-			System.out.println("Dosen't live");
+		}else if(lungs==0) {
+			System.out.println("Doesn't live");
 		}
 	}
 
-	public int getLugs(int i) {
-		return lugs;
+	public int getlungs(int i) {
+		return lungs;
 	}
 
-	public void setLugs(int lugs) {
-		this.lugs = lugs;
+	public void setlungs(int lungs) {
+		this.lungs = lungs;
 	}
 
 	public int getExtremities() {

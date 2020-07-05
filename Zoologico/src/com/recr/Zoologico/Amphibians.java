@@ -9,7 +9,7 @@ public Amphibians() {
 }
 public void Jump() {
 	if(extremities>0) {
-		System.out.println("This"+this.getName()+"Jump" );
+		System.out.println(this.getName()+" can Jump" );
 		System.out.println(this.getKind()+": "+ this.getName()+"\nExtremities:"+this.getExtremities()+"\nYears: "+this.getAge()+"\nEyes:"+this.getEyes()+"\nHabit: "+this.getHabit()+ "\nSex:"+this.getSex()+"\nBones: "+this.getBone()+"\nSize:"+this.getSize());
 	}
 		

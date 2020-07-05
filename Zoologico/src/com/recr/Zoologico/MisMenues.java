@@ -3,32 +3,31 @@ package com.recr.Zoologico;
 public class MisMenues {
 
     private OpcionesMenuPpal menuPpal = new OpcionesMenuPpal();
-    ReptilList ReptilList = new ReptilList();
+    ReptileList ReptileList = new ReptileList();
     
 	
-	// Muestro el submenu correspondiente
+
 	public void seleccionOpcion(String rutaActual) {
 
 		if(rutaActual.equals("0")) {
 			menuPpal.options();
 		}		
         
-		// Vertebrados
 		else if(rutaActual.equals("02")) {
 	        System.out.println("\nVertebrate");  
 	        System.out.println("\n0.Back");  
 	        System.out.println("1.Exit\n"); 
 	        
-	        System.out.println("2.Reptil");
+	        System.out.println("2.Reptile");
 	        System.out.println("3.Mammals");
 	        System.out.println("4.Birds");
 	        System.out.println("5.Fish");
 	        System.out.println("6.Amphibians");
 		}
 		
-		// Vertebrados - Reptiles
+		
 		else if(rutaActual.equals("022")) {
-	        System.out.println("\nReptiles:"); 
+	        System.out.println("\nReptilees:"); 
             System.out.println("Snake");
             System.out.println("Crocodile");
             System.out.println("Dragon");
@@ -39,28 +38,28 @@ public class MisMenues {
             System.out.println("3.Show animals");
 		}
 		
-				// Vertebrados - Reptiles - Add
+				
 				else if(rutaActual.equals("0222")) {
-			        System.out.println("\nAdd reptiles");
-			        ReptilList.addReptil();
+			        System.out.println("\nAdd Reptilees");
+			        ReptileList.addReptile();
 			        
 		
-		            System.out.println("Ingrese 0 para volver al menu anterior!");
+		            System.out.println("Use 0 to go to the previous menu");
 				}
 				
-				// Vertebrados - Reptiles - Show
+				
 				else if(rutaActual.equals("0223")) {
-			        System.out.println("\nShow reptiles");
-			        ReptilList.showAnimals();
+			        System.out.println("\nShow Reptilees");
+			        ReptileList.showAnimals();
 			        
 		
-		            System.out.println("Ingrese 0 para volver al menu anterior!");
+		            System.out.println("Use 0 to go to the previous menu");
 				}
 				
 		
 		
 
-		// Vertebrados - Mammals
+	
 		else if(rutaActual.equals("023")) {
 	        System.out.println("\nMammals"); 	        
             System.out.println("Whale");
@@ -73,12 +72,12 @@ public class MisMenues {
             System.out.println("3.Show animals");
 		}
 		
-		// Vertebrados - Birds
+		
 		else if(rutaActual.equals("024")) {
 	        System.out.println("\nBirds"); 
             System.out.println("Penguin");
             System.out.println("Chicken");
-            System.out.println("Paloma");
+            System.out.println("Dove");
             
 	        System.out.println("\n0.Back");  
 	        System.out.println("1.Exit"); 
@@ -86,7 +85,7 @@ public class MisMenues {
             System.out.println("3.Show animals");
 		}
 		
-		// Vertebrados - Fish
+	
 		else if(rutaActual.equals("025")) {
 	        System.out.println("\nFish"); 
             System.out.println("Catfish");
@@ -99,7 +98,7 @@ public class MisMenues {
             System.out.println("3.Show animals");
 		}
 		
-		// Vertebrados - Amphibians
+		
 		else if(rutaActual.equals("026")) {
 	        System.out.println("\nAmphibians"); 
             System.out.println("Frog");
@@ -111,7 +110,7 @@ public class MisMenues {
 		}
 				
 
-		// Invertebrate
+
 		else if(rutaActual.equals("03")) {
 	        System.out.println("\nInvertebrate"); 
 	        System.out.println("\n0.Back");  
@@ -124,7 +123,7 @@ public class MisMenues {
 		}
 		
 
-		// Invertebrate - Arthropods
+	
 		else if(rutaActual.equals("032")) {
 	        System.out.println("\nArthropods"); 
 	        
@@ -137,7 +136,7 @@ public class MisMenues {
             System.out.println("3.Show animals");
 		}
 
-		// Invertebrate - Echinoderms
+		
 		else if(rutaActual.equals("033")) {
 	        System.out.println("\nEchinoderms"); 
             
@@ -149,7 +148,7 @@ public class MisMenues {
             System.out.println("3.Show animals");
 		}		
 
-		// Invertebrate - Molluscs
+		
 		else if(rutaActual.equals("034")) {
 	        System.out.println("\nMolluscs"); 
 	        
@@ -161,7 +160,7 @@ public class MisMenues {
             System.out.println("3.Show animals");
 		}
 
-		// Invertebrate - Worms
+	
 		else if(rutaActual.equals("035")) {
 	        System.out.println("\nWorms"); 
 	        
@@ -175,7 +174,7 @@ public class MisMenues {
 		
 		
 		else {
-	        System.out.println("\nSeleccione una opción válida");
+	        System.out.println("\nSelect an option");
 		}
 		
 	}
